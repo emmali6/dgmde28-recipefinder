@@ -1,0 +1,159 @@
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Main container */
+.app {
+    max-width: 1200px; /* Increase max-width for larger screens */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Title */
+.title {
+    text-align: center;
+    font-size: 2.5rem; /* Larger title */
+    color: #e74c3c; /* Tomato red */
+    margin-bottom: 20px;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #2980b9; /* Dark blue */
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-item {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-link:hover {
+    color: #f0f0f0; /* Lighter text color on hover */
+}
+
+/* Recipe Finder */
+.recipe-finder {
+    text-align: center;
+    margin-top: 40px; /* Add some space between navbar and recipe finder */
+}
+
+/* Search input */
+.search-input,
+.ingredient-input,
+.search-button,
+.reset-button {
+    width: calc(100% - 20px); /* Adjust width to match ingredient input */
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 20px; /* Rounded borders */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus,
+.ingredient-input:focus,
+.search-button:hover,
+.reset-button:hover {
+    border-color: #e67e22; /* Carrot orange on focus/hover */
+}
+
+/* Search button */
+.search-button,
+.reset-button {
+    padding: 0.5rem 1rem; /* Smaller padding */
+    font-size: 0.9rem; /* Smaller font size */
+    background-color: #27ae60; /* Nephritis green */
+    color: #fff;
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Recipe grid */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Flexible grid */
+    gap: 20px;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Recipe item */
+.recipe-item {
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    background-color: #fff; /* White background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.recipe-item:hover {
+    transform: translateY(-5px); /* Lift up on hover */
+}
+
+.recipe-image {
+    width: 100%;
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px;
+}
+
+.recipe-category {
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #777; /* Gray text color */
+}
+
+.recipe-link {
+    display: block;
+    text-decoration: none;
+    color: #2980b9; /* Dark blue */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.recipe-link:hover {
+    color: #1a5276; /* Darker blue on hover */
+}
+
+/* About page */
+.about {
+    text-align: center;
+    margin-top: 40px; /* Add some space between navbar and about section */
+}
+
+.about-text {
+    max-width: 800px; /* Increase max-width for larger screens */
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #555; /* Dark gray text color */
+    line-height: 1.6;
+}
